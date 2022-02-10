@@ -1,10 +1,8 @@
 <template>
-    <h1>Welcome to my Course {name}</h1>
-    <button onclick={changeName}>Change Name</button>
-    <p> {addNumber} </p>
-    <template for:each={technologies} for:item="tech">
-        <div key={tech}> {tech} </div>
-    </template>
-    <img src="./resources/lwc.png" alt="" srcset="" height="200px">
-    <my-greeting msg={greetingmsg} onnamechange={nameChange}></my-greeting>
+    <h1>Hello</h1>
+    <button type="button" class="btn btn-primary">Primary</button>
+    <div class="alert alert-success" role="alert">
+        A simple primary alert—check it out!
+    </div>
+    <button class="btn btn-primary">Hello</button>
 </template>
