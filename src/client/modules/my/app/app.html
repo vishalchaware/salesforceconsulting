@@ -1,4 +1,10 @@
 <template>
     <h1>Welcome to my Course {name}</h1>
+    <button onclick={changeName}>Change Name</button>
     <p> {addNumber} </p>
+    <template for:each={technologies} for:item="tech">
+        <div key={tech}> {tech} </div>
+    </template>
+    <img src="./resources/lwc.png" alt="" srcset="" height="200px">
+    <my-greeting msg={greetingmsg} onnamechange={nameChange}></my-greeting>
 </template>

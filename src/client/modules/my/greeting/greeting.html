@@ -1,5 +1,6 @@
 <template>
-    <div class={animationClass} onanimationend={handleAnimationEnd}>
-        <span class="greet">{greeting}</span>
+    <div class="greetingmsg">
+        {msg}
     </div>
+    <button onclick={callParent}>Child Change Name</button>
 </template>
