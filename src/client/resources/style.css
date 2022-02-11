@@ -1,3 +1,40 @@
 .purple-gradient{
     background:linear-gradient(to right, #0c1854 0, #4f0c80 51%, #0e184e 100%);
 }
+
+.dark-yellow{
+    background-color: #FFC72C;
+}
+
+.section-heading{
+    font-size: 42px;
+    line-height: 1.2;
+    font-weight: 700;
+}
+.blue-heading-color{
+    color:#1f2471;
+}
+.blue{
+    background-color: #1f0757;
+}
+.green {
+    background-color: #00b894;
+}
+.yellow {
+    background-color: #fdd76e;
+}
+.red {
+    background-color: #e91e63;
+}
+.skyblue {
+    background-color: #2196f3;
+}
+.purple {
+    background-color: #673ab7;
+}
+
+@media only screen and (min-width:1024px){
+    .services-section{
+        padding:0rem 5rem;
+    }
+}
