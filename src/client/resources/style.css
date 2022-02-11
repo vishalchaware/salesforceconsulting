@@ -38,3 +38,10 @@
         padding:0rem 5rem;
     }
 }
+
+.line{
+    height: 4px;
+    max-width: 100px;
+    margin: auto;
+    border-radius: 6px;
+}
