@@ -1,8 +1,9 @@
-import {LightningElement} from 'lwc'
+import {LightningElement, api} from 'lwc'
 import NAV_DATA from '../../../data/navbarData.js'
 export default class Navbar extends LightningElement{
     navList = NAV_DATA
-    isMobileToggle = false
+    isMobileToggle = false;
+    isDomLoaded = false;
     get openMobileNav(){
         return `collapse navbar-collapse ${this.isMobileToggle && 'show'}`
     }
@@ -19,10 +20,20 @@ export default class Navbar extends LightningElement{
         if(this.isMobileToggle){
             this.toggleMobileMenu()
         }
-        const name = event.target.name.toLowerCase().replace(/\s+/g, '')
-        let tagName = name === 'home'? 'my-navbar':`my-${name}`
-        // const elem = document.querySelector(tagName)
-        // elem.scroll();
+        const name = event.target.name.toLowerCase().replace(/\s+/g, '');
+        let tagName = name === 'home'? 'my-navbar':`my-${name}`;
+    }
+
+    renderedCallback() {
+        if(this.isDomLoaded) {
+            return;
+        } else {
+            const elem = this.template.querySelector('.nav-link');
+            if(elem) {
+                elem.classList.add('active');
+                this.isDomLoaded = true;
+            }
+        }
     }
 
 }
