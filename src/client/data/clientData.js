@@ -5,7 +5,7 @@ const CLIENT_DATA={
             image:'./resources/Images/Client_section/client1.png',
             name:'Ronne Galle',
             role:'Project Manager',
-            feedback:"Our mission was difficult, but the Salesforce Troop team handled it admirably. It took longer than anticipated, but that was partly due to the fact that we added a number of complicated features while the project was still in progress. Salesforce Troop treated the additional requests admirably, and we are satisfied with the final product. For your Salesforce needs, I highly recommend this business."
+            feedback:"Our mission was difficult, but the Lorem Ipsum team handled it admirably. It took longer than anticipated, but that was partly due to the fact that we added a number of complicated features while the project was still in progress. Lorem Ipsum treated the additional requests admirably, and we are satisfied with the final product. For your Salesforce needs, I highly recommend this business."
         },
         {
             name:'Missy Limana',
@@ -17,7 +17,7 @@ const CLIENT_DATA={
             name:'Martha Brown',
             image:'./resources/Images/Client_section/client3.png',
             role:'Project Manager',
-            feedback:"External stakeholders benefited greatly from Salesforce Troop effective creation and integration of an enhanced and productive dashboard. The team was able to respond quickly to client feedback and maintain good contact throughout. They were meticulous and extremely professional."
+            feedback:"External stakeholders benefited greatly from Lorem Ipsum effective creation and integration of an enhanced and productive dashboard. The team was able to respond quickly to client feedback and maintain good contact throughout. They were meticulous and extremely professional."
         },
         {
             name:'Hanna Lisem',
