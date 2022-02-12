@@ -5,8 +5,10 @@
     "bugs": "https://github.com/Vishal Chaware/salesforceconsulting/issues",
     "dependencies": {
         "compression": "^1.7.4",
+        "dotenv": "^16.0.0",
         "express": "^4.17.2",
-        "helmet": "^5.0.2"
+        "helmet": "^5.0.2",
+        "nodemailer": "^6.7.2"
     },
     "devDependencies": {
         "eslint": "^8.8.0",
