@@ -7,7 +7,7 @@ export default class Contactus extends LightningElement {
     }
     sendEmail(){
         console.log(this.formData)
-        fetch('http://localhost:3002/api/v1/sendemail', {
+        fetch('https://loremipsum-vishal.herokuapp.com/api/v1/sendemail', {
             method:'POST',
             headers:{
                 'accept':'application/json',
