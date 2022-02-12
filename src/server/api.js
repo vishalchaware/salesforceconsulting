@@ -10,11 +10,16 @@ if (process.env.NODE_ENV !== 'production') {
     require('dotenv').config();
 }
 
+
+
 const app = express();
 app.use(helmet());
 app.use(compression());
 app.use(cors());
 app.use(bodyParser.json());
+
+const STATIC_DIR = './dist';
+app.use(express.static(STATIC_DIR));
 
 const HOST = process.env.API_HOST || 'localhost';
 const PORT = process.env.API_PORT || 3002;
@@ -44,7 +49,7 @@ app.get('/api/v1/endpoint', (req, res) => {
 });
 
 app.post('/api/v1/sendemail', (req, res) => {
-    console.log(req.body);
+    // console.log(req.body);
     const { name, email, message, phone } = req.body;
     const mailData = {
         from: email, // sender address
